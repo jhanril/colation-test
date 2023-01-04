@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOSANGELES MOUNTAINS</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="hero-section">
+    <header class="sticky">
+      <div class="container">
+        <img src="./assets/lamountain_logo.png" alt="">
+        <ul class="navheader">
+          <li><a href="#history-section">01. HISTORY</a></li>
+          <li><a href="#climb-section">02. TEAM</a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+  <div class="history-section" id="history-section">
+    <div class="container">
+      <div class="header">
+        <div class="header-title">
+          <p class="ht-number">01.</p>
+          <p class="ht-text">HISTORY</p>
+        </div>
+        <p class="header-context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit voluptatibus
+          consectetur voluptatem qui minus aliquam quis modi fugit, doloremque a dolorum obcaecati possimus iusto
+          facilis ea adipisci quam deleniti error, debitis, tenetur quisquam? Illum omnis doloremque inventore, ab
+          minus, dolorum saepe odit incidunt exercitationem repellat cumque nemo, atque labore?</p>
+
+      </div>
+
+    </div>
+    <div class="carousel-section">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="slide"><img src="./assets/5.png" alt=""></div>
+          <div class="slide"><img src="./assets/6.png" alt=""></div>
+          <div class="slide"><img src="./assets/7.png" alt=""></div>
+          <div class="slide"><img src="./assets/8.png" alt=""></div>
+          <div class="slide"><img src="./assets/5.png" alt=""></div>
+          <div class="slide"><img src="./assets/6.png" alt=""></div>
+          <div class="slide"><img src="./assets/7.png" alt=""></div>
+          <div class="slide"><img src="./assets/8.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="climb-section" id="climb-section">
+    <div class="container">
+      <div class="header">
+        <div class="header-title">
+          <p class="ht-number">02.</p>
+          <p class="ht-text">CLIMB</p>
+        </div>
+        <p class="header-context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam eligendi architecto
+          laudantium in enim earum. Animi, quasi qui laborum adipisci doloremque odio, sapiente fugiat cupiditate rem
+          voluptatem molestias eum?</p>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tabs">
+      <ul>
+        <li><a href="#mountain-1">MOUNTAIN 1</a></li>
+        <li><a href="#mountain-2">MOUNTAIN 2</a></li>
+      </ul>
+      <button class="accordion-button">MOUNTAIN 1</button>
+      <div class="tab-item" id="mountain-1">
+        <div class="container">
+          <div class="schedule">
+            <h2>SCHEDULE</h2>
+            <div class="month">
+              <div class="schedule-content">
+                <span class="date">25 Nov 2016</span>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+              <div class="schedule-content">
+                <span class="date">28 Nov 2016</span>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="month">
+              <div class="schedule-content">
+                <span class="date">18 Dec 2016</span>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="month">
+              <div class="schedule-content">
+                <span class="date">7 Jan 2017</span>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <button class="accordion-button">MOUNTAIN 1</button>
+      <div class="tab-item" id="mountain-2">
+        <div class="container">
+          <div class="schedule">
+            <h2>SCHEDULE</h2>
+            <div class="month">
+              <div class="schedule-content">
+                <span class="date">27 Nov 2016</span>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="month">
+              <div class="schedule-content">
+                <span class="date">13 Dec 2016</span>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+              <div class="schedule-content">
+                <span class="date">28 Dec 2016</span>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="month">
+              <div class="schedule-content">
+                <span class="date">9 Feb 2017</span>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <img src="./assets/logocomplete.png" alt="">
+        <p>COPYRIGHT 2016. ALL RIGHT RESERVE</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+
+      $(window).on('scroll', function () {
+        var $header = $('header');
+        var $historySection = $('#history-section');
+        var distanceFromTop = $historySection.offset().top;
+        var $navheaderLi = $('.navheader > li');
+        var $navheaderLinks = $('.navheader li a');
+
+        if ($(window).scrollTop() > distanceFromTop) {
+          $header.addClass('sticky');
+          $header.css('background-color', '#f2f2f2');
+          $header.find('img').attr('src', './assets/logocomplete2.png');
+          $navheaderLi.each(function (i, lis) {
+            $(lis).css('border-color', '#2a2a53');
+          });
+          $navheaderLinks.each(function (i, link) {
+            $(link).css('color', '#2a2a53');
+          });
+        } else {
+          $header.removeClass('sticky');
+          $header.css('background-color', '');
+          $header.find('img').attr('src', './assets/lamountain_logo.png');
+          $navheaderLi.each(function (i, lis) {
+            $(lis).css('border-color', 'white');
+          });
+          $navheaderLinks.each(function (i, link) {
+            $(link).css('color', 'white');
+          });
+        }
+      });
+
+      var $scrollLinks = $('li a[href^="#history-section"], li a[href^="#climb-section"]');
+
+      $scrollLinks.each(function (i, scrollLink) {
+        $(scrollLink).on('click', function (event) {
+          event.preventDefault();
+
+          var targetId = $(scrollLink).attr('href');
+          var $targetElement = $(targetId);
+
+          $('html, body').animate({
+            scrollTop: $targetElement.offset().top
+          }, 500);
+        });
+      });
+
+
+
+      var $tabLinks = $('#tabs a');
+
+      var $tabContent = $('#tabs div.tab-item');
+
+      $tabLinks.each(function (i, tabLink) {
+        $(tabLink).on('click', function (event) {
+          event.preventDefault();
+
+          $tabLinks.parent().removeClass('active');
+          $(this).parent().addClass('active');
+
+          $tabContent.css('display', 'none');
+
+          var tabId = $(this).attr('href');
+          $(tabId).css('display', 'block');
+        });
+      });
+
+      // $tabLinks.first().parent().addClass('active');
+      // $tabContent.first().css('display', 'block');
+
+      $(".accordion-button").click(function () {
+        $(this).next(".tab-item").slideToggle({ duration: 500 });
+      });
+
+
+
+
+      $('.carousel').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+</body>
+
+</html>
